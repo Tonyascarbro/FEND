@@ -33,9 +33,8 @@ body {
 h1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-
-
 }
+
 
 
 /*
@@ -118,3 +117,45 @@ h1 {
   float: right;
   cursor: pointer;
 }
+.modal {
+  display: none;
+
+}
+/* Media Queries */
+@media screen and (max-width: 536px){
+    .deck {
+        width: 310px;
+        min-height: 320px;
+        padding:16px;
+    }
+
+    .score-panel {
+        width: 280px;
+    }
+
+    .deck .card {
+        width: 64.5px;
+        height: 64.5px;
+    }
+}
+@media screen and (min-width: 537px) and (max-width: 760px){
+
+    .deck {
+        width: 495px;
+        min-height: 495px;
+        padding:24px;
+    }
+
+
+    .deck .card {
+        width: 93.75px;
+        height: 93.75px;
+    }
+}
+
+
+
+
+
+
+    }
