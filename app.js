@@ -32,7 +32,7 @@ var timer = {
 /* Determines the Star & Level Difficulty */
 var Difficult = 20;
 var Medium= 15;
-var Easy=10;
+
 
 
 /*Win Pop-up Toggle and timer from www.Scotch.com*/
@@ -75,54 +75,6 @@ function resetTimer() {
     timer.clearTime = setInterval(startTimer, 1000);
 };
 
-/*function moveCounter(){
-    moves++;
-    counter.innerHTML = moves;
-
-// setting rates based on moves
-    if (moves > 8 && moves < 12){
-        for( i= 0; i < 3; i++){
-            if(i > 1){
-                stars[i].style.visibility = "collapse";
-            }
-        }
-    }
-    else if (moves > 13){
-        for( i= 0; i < 3; i++){
-            if(i > 0){
-                stars[i].style.visibility = "collapse";
-            }
-        }
-    }
-}
-var second = 0, minute = 0;
-var timer = document.querySelector(".timer");
-var interval;
-function startTimer(){
-    interval = setInterval(function(){
-        timer.innerHTML = minute+"mins "+second+"secs";
-        second++;
-        if(second == 60){
-            minute++;
-            second = 0;
-        }
-        if(minute == 60){
-            hour++;
-            minute = 0;
-        }
-    },1000);
-}
-function moveCounter(){
-    moves++;
-    counter.innerHTML = moves;
-    //start timer on first move
-    if(moves == 1){
-        second = 0;
-        minute = 0;
-        hour = 0;
-        startTimer();
-    }
-    startGame(){...*/
 
 // Randomizes cards
 function updateCards() {
@@ -155,7 +107,7 @@ function resetStars() {
 function moveCounterUpdater() {
     $(".moves").text(moveCounter);
 /*From Javascript Book Creating Functions for the Web*/
-    if (moveCounter === Difficult || moveCounter === Medium || moveCounter === Easy) {
+    if (moveCounter === Difficult || moveCounter === Medium) {
         starRemove();
     }
 };
